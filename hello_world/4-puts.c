@@ -1,7 +1,19 @@
 # include <stdio.h>
+# include <stdio.h>
+
+
 /**
- * int main ()
+ * main - prints " Programming is like building a multilingual puzzle
+ *                puzzle , followed by a new line.
+ *                
+ * Return: Always 0.
+ *
+ */
+int main (void)
+
  * {
- * Programming is like building a muitilingual puzzle;
- * Return 0;
+ *         puts("\"Programming is like building a muitilingual puzzle");
+ *
+	 *
+ * Return (0);
  * }
