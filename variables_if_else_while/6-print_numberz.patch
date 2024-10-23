@@ -1,0 +1,30 @@
+diff --git a/variables_if_else_while/6-print_numberz b/variables_if_else_while/6-print_numberz
+new file mode 100755
+index 0000000..c7876c8
+Binary files /dev/null and b/variables_if_else_while/6-print_numberz differ
+diff --git a/variables_if_else_while/6-print_numberz.c b/variables_if_else_while/6-print_numberz.c
+new file mode 100644
+index 0000000..dcd6707
+--- /dev/null
++++ b/variables_if_else_while/6-print_numberz.c
+@@ -0,0 +1,20 @@
++# include <stdlib.h>
++# include <stdio.h>
++# include <time.h>
++/**
++ * main - Entry point
++ *
++ * Return: Always 0
++ */
++int main(void)
++{
++	int num;
++
++	for (num = 0; num < 10; num++)
++		putchar((num % 10) + '0');
++
++	putchar('\n');
++
++	return (0);
++
++}
