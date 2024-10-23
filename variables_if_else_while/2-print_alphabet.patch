@@ -1,0 +1,26 @@
+diff --git a/variables_if_else_while/2-print_alphabet.c b/variables_if_else_while/2-print_alphabet.c
+index ae7298f..29ff5bf 100644
+--- a/variables_if_else_while/2-print_alphabet.c
++++ b/variables_if_else_while/2-print_alphabet.c
+@@ -3,14 +3,17 @@
+ # include <time.h>
+ /**
+  * main - Entry point
+- * Return: Always 0
++ *
++ * Return: (0)
+  */
+ int main(void)
+ {
+-	char letter;
+-	for (letter = 'a'; letter <= 'z'; letter++)
+-		putchar(letter);
++	char alphabets;
+ 
++	for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
++	{
++		putchar(alphabets);
++	}
+ 	putchar('\n');
+ 
+ 
