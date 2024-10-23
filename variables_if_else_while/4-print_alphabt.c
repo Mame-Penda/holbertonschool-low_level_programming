@@ -4,15 +4,15 @@
 /**
  * main - Entry point
  *
- * Return: 0
+ * Return: Always 0
  */
 int main(void)
 {
-	char alphabets
-		for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
+	int letter;
+		for (letter = 97; letter <= 122; letter++)
 		{
-			if (alphabets != 'e' && alphabets != 'q')
-				putchar (alphabets);
+			if (letter != 'e' && letter != 'q')
+				putchar (letter);
 		}
 
 	putchar('\n');
