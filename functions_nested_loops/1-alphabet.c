@@ -1,19 +1,16 @@
-#include <main.h>
+#include "main.h"
 /**
  * main - print alphabet
  * Return: Always 0
  */
 void print_alphabet(void)
 {
-	char letter;
-
-	letter = ('a')
+	char letter = 'a';
 
 	while (letter <= 'z')
 	{
-		ft_putchar(letter);
+		_putchar(letter);
 		letter++;
 	}
 	_putchar('\n');
-	return (0);
 }
