@@ -1,6 +1,5 @@
 #include "main.h"
 /**
- *
  * main - Entry putchar
  * Return: Always 0
  */
