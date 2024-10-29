@@ -19,6 +19,7 @@ void print_triangle(int size)
 
 			if (hash == size)
 				continue;
+			_putchar('\n');
 		}
 	}
 	_putchar('\n');
