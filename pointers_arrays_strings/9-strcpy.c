@@ -2,11 +2,11 @@
 #include "string.h"
 /**
  * _strcpy - copies the string pointed to by src
- * _strcpy - copy paste string
+ * src: source
  * @dest: The buffer pointed
- *@src: The number to be printed
+ *Return: dest
  */
-char *_strcpy(char *dest, char *src);
+char *_strcpy(char *dest, char *src)
 {
 	int inc = 0;
 
