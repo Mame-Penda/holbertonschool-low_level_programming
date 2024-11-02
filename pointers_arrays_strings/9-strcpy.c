@@ -1,18 +1,20 @@
 #include "main.h"
+#include "string.h"
 /**
  * _strcpy - copies the string pointed to by src
- * _strcpy:writes additional null bytes to dest
+ * _strcpy - copy paste string
  * @dest: The buffer pointed
  *@src: The number to be printed
  */
 char *_strcpy(char *dest, char *src);
 {
-	size_t i;
+	int inc = 0;
 
-	for (i = 0; i < n && src[i] != '0\'; i++)
-		dest[i] = src[i];
-	for ( ; i < n; i++)
-		dest[i] = '\0';
-	return dest;
+	while (*(src + inc) != '\0')
+	{
+		*(dest + inc) = *(src + inc);
+			inc++; }
+	*(dest + inc) = '0';
+	return (dest);
 
 }
