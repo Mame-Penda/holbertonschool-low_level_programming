@@ -4,15 +4,14 @@
  * @n: the number of byte to copy
  * @src: the source buffer to be copied
  * @dest: a pointer to the memory area pointed
- *
+ * Return: pointer to destination 'dest'
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int index;
-	unsigned char *destination = dest;
-	const unsigned char *source = src;
-
-	for (index = 0; index < n; index++)
-		destination[index] = source[index];
-	return (dest);
+unsigned int i;
+for (i = 0; i < n; i++)
+{
+dest[i] = src[i];
+}
+return (dest);
 }
