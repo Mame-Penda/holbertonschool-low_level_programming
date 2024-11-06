@@ -4,12 +4,14 @@
 /**
  * _strlen_recursion -  returns the length of a string.
  * @s: the string to be printed
- * @str: the character lenght
  * Return: the lenght of the string
  */
 int _strlen_recursion(char *s)
 {
-int lenght = *s;
-printf("lenght of the string is : %d", lenght);
+int lenght = 0;
+{
+lenght++;
+lenght +=  _strlen_recursion(s + 1);
+}
 return (0);
 }
