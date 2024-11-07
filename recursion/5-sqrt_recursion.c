@@ -1,20 +1,20 @@
 #include "main.h"
 /**
- * _sqrt_recursion - returns the natural square root of a number.
+ * _sqrt - calculate a  square root of a number.
  * @n: natural square root
- * @guess: the number until + 1 guess * guess = n
+ * @root: the number until + 1 root * root = n
  *
- * Return: guess
+ * Return: root
  *
  */
-int _sqrt_recursion(int n guess)
+int _sqrt(int n, int root)
 {
-	if ((guess * guess) > n)
-		return (-1);
-	else if ((guess * guess) == n)
-		return (guess);
-	else 
-		return (_sqrt(n, guess +1));
+if ((root * root) > n)
+return (-1);
+else if ((root * root) == n)
+return (root);
+else
+return (_sqrt(n, root + 1));
 }
 /**
  *  _sqrt_recursion - go into the  _sqrt to calculate
@@ -24,8 +24,8 @@ int _sqrt_recursion(int n guess)
  */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
-	else
-		return (_sqrt(n, 0));
+if (n < 0)
+return (-1);
+else
+return (_sqrt(n, 0));
 }
