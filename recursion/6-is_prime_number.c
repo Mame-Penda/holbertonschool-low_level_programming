@@ -8,16 +8,15 @@
  */
 int helper(int n, int i)
 {
-	if (n < 0)
+	if (n == 1)
 		return (0);
-	else if (i > 0)
+	else if (n > i)
 	{
 		if (n % i == 0)
 			return (0);
-		else if (n % i != 0)
-			return (1);
+		return (helper(n, i + 1));
 	}
-return (helper(n, i - 1));
+	return (1);
 }
 /**
  * is_prime_number - 1 the input integer is a prime number, otherwise return 0
