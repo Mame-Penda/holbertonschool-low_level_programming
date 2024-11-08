@@ -4,7 +4,7 @@
  * main - multiplies two numbers passed as arguments
  * @argv: array of arguments
  * @argc: the number total of arguments
- * Returns: returns 0
+ * Return: returns 0
  */
 int main(int argc, char *argv[])
 {
@@ -16,8 +16,9 @@ return (1);
 }
 i = atoi(argv[1]);
 j = atoi(argv[2]);
-
 mul = i *j;
+{
 printf("%d\n", mul);
 return (0);
+}
 }
