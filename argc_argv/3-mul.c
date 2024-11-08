@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 /**
- * main - prints multiplies two numbers.
+ * main - multiplies two numbers passed as arguments
  * @argv: array of arguments
  * @argc: the number total of arguments
  * Returns: returns 0
@@ -16,9 +16,8 @@ return (1);
 }
 i = atoi(argv[1]);
 j = atoi(argv[2]);
-{
-mul = i * j;
+
+mul = i *j;
 printf("%d\n", mul);
 return (0);
-}
 }
