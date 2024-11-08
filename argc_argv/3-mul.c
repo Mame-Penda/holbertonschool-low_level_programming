@@ -1,10 +1,10 @@
 #include "stdio.h"
 #include "stdlib.h"
 /**
- * main - multiplies two numbers.
- * @argv: array conains a arguments
+ * main - prints multiplies two numbers.
+ * @argv: array of arguments
  * @argc: the number total of arguments
- * Returns: 0 always
+ * Returns: returns 0
  */
 int main(int argc, char *argv[])
 {
@@ -14,10 +14,10 @@ if (argc <= 2)
 printf("Error\n");
 return (1);
 }
-int num1 = atoi(argv[1]);
-int num2 = atoi(argv[2]);
+i = atoi(argv[1]);
+j = atoi(argv[2]);
 {
-int num1 * num2
+mul = i * j;
 printf("%d\n", mul);
 return (0);
 }
