@@ -8,3 +8,4 @@ int _putchar(char c);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 char *string_toupper(char *);
+char *cap_string(char *);
