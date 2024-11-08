@@ -3,7 +3,6 @@
  * main - prints all arguments it receives.
  * @argv: array contains a arguments
  * @argc: number total of arguments
- * @i: number integer
  * Return: 0 always
  */
 int main(int argc, char *argv[])
