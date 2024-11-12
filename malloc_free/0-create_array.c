@@ -1,12 +1,12 @@
 #include "main.h"
-#include "stdio.h"
 #include "stdlib.h"
-/*
- *create_array - allows to creates an array of char
- * @size: the size of the memory
- *@c: a char to initialize the array with
- @i: integer
- *Return: Always 0
+/**
+ * create_array - Crée un tableau de caractéres et l'initialise
+ * avec un caractére spécifique
+ * @size: Taille de l'espace mémoire à allouer pour le tableau
+ * @c: Caractère avec lequel initialiser le tableau
+ * Return: 0 si size vaut 0 ou si l'allocation échoue,
+ * sinon un pointeur vers le tableau
  */
 char *create_array(unsigned int size, char c)
 {
