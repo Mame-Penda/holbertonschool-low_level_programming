@@ -17,11 +17,11 @@ if (s1 == 0)
 return ("");
 if (s2 == 0)
 return ("");
-for (i = 0;s1[i]; i++)
+for (i = 0; s1[i]; i++)
 len++;
 concat = malloc(sizeof(char) * (len + 1));
 len = 0;
-for ( i =0;s1[i]; i++)
+for (i = 0; s1[i]; i++)
 concat[len++] = s1[i];
 for (i = 0; s2[i] && i < n; i++)
 concat[len++] = s2[i];
