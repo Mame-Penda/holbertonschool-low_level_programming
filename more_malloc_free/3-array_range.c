@@ -8,7 +8,7 @@
  * Return: NULL if the operation fails
  *
  */
- int *array_range(int min, int max)
+int *array_range(int min, int max)
 {
 int *array;
 int i, size;
