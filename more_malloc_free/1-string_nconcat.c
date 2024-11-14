@@ -6,7 +6,7 @@
  * @s2: the second string
  * @n: is greater or equal to the length of s2 then use the entire string s2
  *
- * Return: NULL
+ * Return: NULL if function is fail
  *
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -20,6 +20,8 @@ return ("");
 for (i = 0; s1[i]; i++)
 len++;
 concat = malloc(sizeof(char) * (len + 1));
+if (concat == NULL)
+return (NULL);
 len = 0;
 for (i = 0; s1[i]; i++)
 concat[len++] = s1[i];
