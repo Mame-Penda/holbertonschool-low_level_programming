@@ -10,3 +10,4 @@ void print_diagsums(int *a, int size);
 char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *s);
+int _strcmp(char *s1, char *s2);
