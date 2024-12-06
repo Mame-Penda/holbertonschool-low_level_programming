@@ -7,14 +7,13 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int fd;
-ssize_t len_r = 0, len_w = 0;
+int fd, len_r, len_w;
 char *temp;
 
 if (!filename || !letters)
 return (0);
 
-temp = malloc(sizeof(letters));
+temp = malloc(letters);
 if (!temp)
 return (0);
 
@@ -23,6 +22,7 @@ fd = open(filename, O_RDONLY);
 if (fd == -1)
 {
 free(temp);
+close(fd);
 return (0);
 }
 
@@ -37,10 +37,9 @@ len_w = write(STDOUT_FILENO, temp, len_r);
 {
 	free(temp);
 	close(fd);
+	return (0);
 }
 free(temp);
 close(fd);
-if (fd < 0)
-	return (0);
 return (len_w);
 }
