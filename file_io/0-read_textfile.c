@@ -20,11 +20,7 @@ return (0);
 fd = open(filename, O_RDONLY);
 
 if (fd == -1)
-{
-free(temp);
-close(fd);
 return (0);
-}
 
 len_r = read(fd, temp, letters);
 if (len_r == -1)
@@ -34,6 +30,7 @@ if (len_r == -1)
 	return (0);
 }
 len_w = write(STDOUT_FILENO, temp, len_r);
+if (len_w == -1 || len_w != len_r)
 {
 	free(temp);
 	close(fd);
