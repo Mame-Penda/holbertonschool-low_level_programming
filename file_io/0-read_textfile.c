@@ -28,7 +28,11 @@ return (0);
 
 len_r = read(fd, temp, letters);
 if (len_r == -1)
-fail_CLEANUP;
+{
+	free(temp);
+	close(fd);
+	return (0);
+}
 
 free(temp);
 close(fd);
