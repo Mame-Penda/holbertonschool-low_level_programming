@@ -34,13 +34,13 @@ if (len_r == -1)
 	return (0);
 }
 len_w = write(STDOUT_FILENO, temp, len_r);
-if (len_w == -1 || len_w != len_r)
 {
 	free(temp);
 	close(fd);
-	return (0);
 }
 free(temp);
 close(fd);
+if (fd < 0)
+	return (0);
 return (len_w);
 }
