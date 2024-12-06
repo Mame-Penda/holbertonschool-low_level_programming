@@ -14,15 +14,17 @@ char *temp;
 if (!filename || !letters)
 return (0);
 
-temp = malloc(sizeof(letters);
+temp = malloc(sizeof(letters));
 if (!temp)
 return (0);
 
 fd = open(filename, O_RDONLY);
 
 if (fd == -1)
+{
 free(temp);
 return (0);
+}
 
 len_r = read(fd, temp, letters);
 if (len_r == -1)
