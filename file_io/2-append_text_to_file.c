@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * append_text_to_file - appends text at the end of file
  * @filename: name of the file
@@ -31,4 +32,4 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	close(fd);
 	return (1);
-}: wq
+}
